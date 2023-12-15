@@ -47,7 +47,6 @@ const Modal = ({ data,isOpen, onClose, onSave, children }) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(value)) {
           setErrorState((prev) => ({ ...prev, [key]: {...prev[key],isError:true,message:"Invalid Email"} }));
-          // return;
         }
         else{
           setErrorState((prev) => ({ ...prev, [key]: {...prev[key],isError:false,message:"This field is required"} }));
@@ -57,12 +56,9 @@ const Modal = ({ data,isOpen, onClose, onSave, children }) => {
   };
 
   useEffect(()=>{
-    console.log(errorState);
   },[errorState])
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setFormData()
-    // onSubmit(formData);
   };
 
   return (
@@ -78,7 +74,6 @@ const Modal = ({ data,isOpen, onClose, onSave, children }) => {
 
             <form>
               <div className='form-field'>
-                {/* <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required/> */}
                 <div>
                   <label htmlFor="name"><span className='star'>*</span>Name:</label>
                   <input type="text" id="name" name="name" value={formData.name} onChange={handleChange}  required/>
@@ -106,7 +101,6 @@ const Modal = ({ data,isOpen, onClose, onSave, children }) => {
                 </div>
                 <p className='error' style={{visibility:errorState.websiteError.isError?"visible":"hidden"}}>{errorState.websiteError.message}</p>
               </div>
-              {/* <button onClick={handleSubmit}>Ok</button> */}
             </form>
             </div>
 

@@ -1,7 +1,5 @@
 .tile{
-    /* background-color: blue; */
     width:22%;
-    /* color:w; */
     display: flex;
     flex-direction:column;
     margin:1rem;
@@ -9,38 +7,23 @@
 }
 
 .tile-image{
-    /* aspect-ratio:1/0.7; */
     min-height:200px;
-    
     width:100%;
     background-color:#e8e8e8;
 }
 
 .tile-information{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* margin-:2rem; */
-    /* background-color: yellow; */
     height: 30%;
     margin-bottom:2rem;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .text{
-    /* height:20%; */
     margin-left:1.5rem;
     font-weight: bold;
-    /* background-color: pink; */
     display: flex;
-    /* justify-content: center; */
-    /* align-items: end; */
 }
 
 .icon-text{
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
     margin:0.5rem 1rem;
 }
@@ -50,44 +33,27 @@
 }
 
 .title-info-inner{
-    /* height:80%; */
     font-size:1rem;
     line-height: 0.5rem;
-    /* margin-bottom: 2rem; */
-
-    /* background-color: aqua; */
 }
 
 .tile-bottom{
-    /* height: 15%; */
     display: flex;
-    /* background-color: aqua; */
-    /* justify-content: space-between; */
     align-items: center;
     border-top: 1px solid #e8e8e8;
-    /* background-color: pink; */
 }
-
-/* .tile-bottom div{
-    padding: 1rem;
-} */
 
 .tile-bottom-inner{
     flex:1;
-    /* width:100%; */
-    /* height: 60%;  */
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin:10px 0; 
     border-right: 1px solid #e8e8e8;
     cursor: pointer;
-    /* background-color: aqua; */
 }
 
 .bottom-icon{
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +69,6 @@
 
 .heart :hover{
     color:red;
-    /* font-size:1.2rem; */
 }
 
 @media screen and (max-width: 1024px) {
@@ -115,15 +80,11 @@
 @media screen and (max-width: 768px) {
     .tile {
         width: 40%;;
-        /* min-width: 30%; */
-      /* max-width:40%; */
     }
   }
 
 @media screen and (max-width: 426px) {
     .tile {
         width:90%;
-        /* min-width: 90%; */
-          /* max-width:40%; */
     }
   }

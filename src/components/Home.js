@@ -16,40 +16,26 @@ function Home() {
   };
 
   const updateItem = (index, newData) => {
-    console.log(index,newData);
-    // const updatedItems = items.map((ele) => (ele.id === index ? { ...ele, ...newData } : ele));
     const updatedItems = [...items];
 
-    // Create a copy of the item to update
     const updatedItem = { ...updatedItems[index-1], ...newData };
   
-    // Update the item in the copied array
     updatedItems[index-1] = updatedItem;
   
-    // Update the state with the new array
-    setItems(updatedItems);
-
-    // const item=items.filter(ele=>ele.id==index);
-    // const updatedItem={...item[0],...newData}
-    // setItems((prev)=>[...prev,updatedItem]);
-    
+    setItems(updatedItems);    
   };
 
-  useEffect(()=>{
-    console.log(items);
-  },[items]);
+  
 
   return (
     <div className='container'>
      
       <div className="tile-container">
-        {/* <div className='tiles'> */}
           {
             items.map(ele=>{
-              return <Tile element={ele} updateItem={updateItem} deleteItem={deleteItem}/>
+              return <Tile key={ele.id} element={ele} updateItem={updateItem} deleteItem={deleteItem}/>
             })
           }
-        {/* </div> */}
       </div>
     </div>
   )

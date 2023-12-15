@@ -17,12 +17,10 @@ function Tile(props) {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleClick=()=>{
-    // console.log("xlicked");
     setIsLiked((prev)=>!prev);
   }
 
   const handleSubmit = (formData) => {
-    console.log(formData);
     props.updateItem(formData.id,formData);
     closeModal();
   };
@@ -39,10 +37,8 @@ function Tile(props) {
   return (
     <div className='tile'>
       <Modal data={props.element} isOpen={isModalOpen} onSave={handleSubmit} onClose={()=>closeModal()}>
-        {/* <Form data={props.element} onSubmit={handleSubmit}/> */}
       </Modal>
       <div className='tile-image'></div>
-        {/* <img className="tile-image" src='https://fastly.picsum.photos/id/881/200/300.jpg?hmac=OaIsS2cuxcnUpCVdxcFoc8JwfJgzWEv2Z9F_qEN9tHU'></img> */}
       <div className='tile-information'>
       <div className='text'>
         <p>{props.element.name}</p>
