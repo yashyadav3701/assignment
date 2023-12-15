@@ -1,0 +1,94 @@
+/* form.css */
+
+form {
+    width: 90%;
+    margin: 0 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* align-items: flex-end; */
+    /* background-color: aqua; */
+  }
+  
+  /* div {
+    margin-bottom: 0.5rem;
+  } */
+  
+  label {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* width:30%; */
+    font-size: 0.9rem;
+    /* display: block; */
+    /* font-weight: bold; */
+    margin-bottom:0.5px;
+    /* background-color: aquamarine; */
+  }
+  label span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.2rem
+  }
+  
+  input {
+    margin:0 0.8rem;
+    width: 70%;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input:hover{
+    border-color:rgb(29, 107, 251);
+  }
+  input:focus{
+    outline: none;
+    border-color:rgb(29, 107, 251);
+    box-shadow:0.7px 0.7px 2px rgb(29, 107, 251),-0.7px -0.7px 2px rgb(29, 107, 251) ;
+  }
+  
+  /* button {
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+  
+  /* button:hover {
+    background-color: #0056b3;
+  }
+   */
+  .form-field{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: center;
+    padding:0 0.6rem;
+    /* background-color: red; */
+    width:100%;
+    /* margin:1rem; */
+  }
+
+  .form-field div{
+    width:100%;
+    display: flex;
+    /* flex */
+    justify-content: end;
+  }
+
+  .error{
+    color: red;
+    font-size: 0.8rem;
+  }
+
+  .star{
+    color: red;
+    font-size: 1.5rem;
+    /* margin:0 0.1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
